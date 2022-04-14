@@ -31,3 +31,13 @@ html {
 .search {
   text-transform: uppercase;
 }
+
+.main {
+  background-color: #363232;
+  height: 100vh;
+}
+
+.card-deck {
+  padding-top: 2em;
+  color: white;
+}

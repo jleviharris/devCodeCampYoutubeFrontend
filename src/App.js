@@ -1,7 +1,13 @@
-import "./App.css";
+import "./index.css";
+
+import Header from "./components/Header";
 
 function App() {
-  return <div>Hello CloneTube</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
 
 export default App;

@@ -1,13 +1,18 @@
-import "../index.css";
+// import "../index.css";
+// import React from "react";
 
-import React from "react";
+// const MainCards = ({Videos ,filteredData}) => {
+//   return (
+//     <div>
+//       return (
+//         <div>
+//         <div>{value.id}</div>
+//         <div>{value.title}</div>
+//         </div>
+//         )
+//     })
+//     };
+//        </div>)
+// };
 
-const MainCards = () => {
-  return (
-    <div className="main">
-      <div className="card-deck">MainCards</div>
-    </div>
-  );
-};
-
-export default MainCards;
+// export default MainCards;

@@ -1,18 +1,17 @@
-// import "../index.css";
-// import React from "react";
+import "../index.css";
+import React from "react";
 
-// const MainCards = ({Videos ,filteredData}) => {
-//   return (
-//     <div>
-//       return (
-//         <div>
-//         <div>{value.id}</div>
-//         <div>{value.title}</div>
-//         </div>
-//         )
-//     })
-//     };
-//        </div>)
-// };
+const MainCards = ({Videos}) => {
+  return (
+    <div className="dataResults">
+    {Videos.map((value, key) => {
+        return (
+          <div>
+          <div>{value.etag}</div>
+        </div>
+        );
+    })}
+    </div>)}
+  
 
-// export default MainCards;
+export default MainCards;

@@ -1,6 +1,4 @@
 import "../index.css";
-import Videos from "../App";
-
 import Searchbar from "./Searchbar";
 
 const Header = (props) => {

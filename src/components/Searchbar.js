@@ -6,6 +6,7 @@ const Searchbar = ({searchTerm, setSearchTerm}) => {
     const setSearch = (event) => {
         const searchWord = event.target.value;
         setSearchTerm(searchWord);
+       
     }
    
   return (

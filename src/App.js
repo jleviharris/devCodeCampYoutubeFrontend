@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./index.css";
 import axios from 'axios';
 import Header from './components/Header';
-// import MainCards from './components/MainCards';
+import MainCards from './components/MainCards';
 
 function App() {
   const APIKEY = "AIzaSyDAXtEJIM9IO2wD89wXhcRxmu72ryJGk2I";
@@ -29,7 +29,7 @@ function App() {
   return (
     <div className='container'>
       <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-      {/* <MainCards /> */}
+      <MainCards Videos={Videos} />
     </div>
   );
 }

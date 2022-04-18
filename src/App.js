@@ -10,8 +10,9 @@ function App() {
   const [Videos, setVideos] = useState([]);
   
   const getData = async () => {
+    
     try{
-      let response = await axios.get(`https://www.googleapis.com/youtube/v3/search?q=${searchTerm}&key=${APIKEY}`);
+      let response = await axios.get(`https://www.googleapis.com/youtube/v3/search?q=${searchTerm}&key=${APIKEY}&fields=items(id,snippet(channelId,title))&part=snippet&type=video`);
       function placeVideos(){
         let tempVideos = response.data.items;
         setVideos(tempVideos);

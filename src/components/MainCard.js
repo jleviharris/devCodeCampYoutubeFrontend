@@ -1,10 +1,12 @@
 import "../index.css";
 import React from "react";
+import IFrameInput from "./iframe";
 
-const MainCard = ({ title }) => {
+const MainCard = ({ title, id }) => {
   return (
     <div className="main">
       <div className="card" style={{ width: "10rem" }}>
+        <IFrameInput id={id}/>
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <p className="card-text">yo</p>

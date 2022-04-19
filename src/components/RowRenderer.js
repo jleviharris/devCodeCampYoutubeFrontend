@@ -8,6 +8,7 @@ const RowRenderer = ({ Videos }) => {
       <div style={{ display: "inline-block" }}>
         <MainCard
           title={Videos[i].snippet.title}
+          id={Videos[i].id.videoId}
           // album={Videos[i].album}
           // artist={Videos[i].artist}
           // genre={Videos[i].genre}

@@ -1,7 +1,7 @@
 import React from "react";
 
-const Iframe = ({value}) => {
-    const source = `https://www.youtube.com/embed/${value}`;
+const IFrameInput = ({id}) => {
+    const source = `https://www.youtube.com/embed/${id}`;
     return (
         <div>
         <iframe width="420" height='345' src={source}></iframe>
@@ -9,4 +9,4 @@ const Iframe = ({value}) => {
     )
 }
 
-export default Iframe;
+export default IFrameInput;

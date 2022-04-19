@@ -1,21 +1,24 @@
 import "../index.css";
+
 import React from "react";
+import VideoPlayer from "./VideoPlayer";
 
-const MainCards = ({Videos}) => {
+const MainCard = ({ title }) => {
   return (
-    <div className="dataResults">
-    {Videos.map((value, index) => {
-        return (
-          <div key={index}>
-            <div>{value.id.videoId}</div>
-          </div>
-        );
-    })}
-    </div>)}
-  
+    <div className="main">
+      <div className="card" style={{ width: "10rem" }}>
+        <div className="card-body">
+          <h5 className="card-title">{title}</h5>
+          <p className="card-text">yo</p>
+          <p className="card-text">yes</p>
+          <p className="card-text">yyy</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default MainCards;
-
+export default MainCard;
 
 // const CardMain = ({ title, artist, album, genre, releaseDate }) => {
 //   return (

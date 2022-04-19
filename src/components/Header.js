@@ -1,13 +1,18 @@
 import "../index.css";
+
 import Searchbar from "./Searchbar";
 
-const Header = (props) => {
+const Header = ({ searchTerm, setSearchTerm, setVideos }) => {
   return (
     <div className="header-container">
       <nav className="logo">
         Clone<span id="tube">Tube</span>
       </nav>
-      <Searchbar searchTerm={props.searchTerm} setSearchTerm={props.setSearchTerm}/>
+      <Searchbar
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        setVideos={setVideos}
+      />
     </div>
   );
 };

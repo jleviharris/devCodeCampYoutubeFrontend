@@ -1,18 +1,25 @@
-import React, { useState, useEffect } from 'react';
 import "../index.css";
 
+import React, { useEffect, useState } from "react";
 
-const Searchbar = ({searchTerm, setSearchTerm}) => {
-    const setSearch = (event) => {
-        const searchWord = event.target.value;
-        setSearchTerm(searchWord);
-       
-    }
-   
+import { SearchForVideos } from "../Utilities/Search";
+
+const Searchbar = ({ searchTerm, setSearchTerm, setVideos }) => {
+  const setSearch = (event) => {
+    const searchWord = event.target.value;
+    setSearchTerm(searchWord);
+    SearchForVideos(searchWord).then((videos) => setVideos(videos));
+  };
+
   return (
     <div className="search">
       {" "}
-      <form className="form-inline my-2 my-lg-0">
+      <form
+        className="form-inline my-2 my-lg-0"
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <input
           className="form-control mr-sm-2"
           type="text"
@@ -25,11 +32,3 @@ const Searchbar = ({searchTerm, setSearchTerm}) => {
   );
 };
 export default Searchbar;
-
-
- 
-
-
-
-
-

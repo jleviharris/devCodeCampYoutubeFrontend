@@ -4,7 +4,7 @@ const IFrameInput = ({id}) => {
     const source = `https://www.youtube.com/embed/${id}`;
     return (
         <div>
-        <iframe width="420" height='345' src={source}></iframe>
+        <iframe width="100%" height='345' src={source}></iframe>
         </div>
     )
 }

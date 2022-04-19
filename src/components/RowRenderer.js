@@ -17,7 +17,7 @@ const RowRenderer = ({ Videos }) => {
       </div>
     );
   }
-  return <div>{cardHtml}</div>;
+  return <div className="cardsBody">{cardHtml}</div>;
 };
 
 export default RowRenderer;

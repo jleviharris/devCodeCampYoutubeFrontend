@@ -7,7 +7,11 @@ html {
   box-sizing: border-box;
   font-family: Poppins, monospace;
 }
-
+.cardsBody {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
 .header-container {
   display: flex;
   justify-content: space-between;

@@ -1,7 +1,5 @@
 import "../index.css";
-
 import React from "react";
-import VideoPlayer from "./VideoPlayer";
 
 const MainCard = ({ title }) => {
   return (

@@ -1,16 +1,14 @@
 import "../index.css";
-
-import React, { useEffect, useState } from "react";
-
 import { SearchForVideos } from "../Utilities/Search";
 
 const Searchbar = ({ searchTerm, setSearchTerm, setVideos }) => {
   const setSearch = (event) => {
     const searchWord = event.target.value;
-    setSearchTerm(searchWord);
-    SearchForVideos(searchWord).then((videos) => setVideos(videos));
+    setSearchTerm(searchWord); 
   };
-
+  const search = () => {
+    SearchForVideos(searchTerm).then((videos) => setVideos(videos));
+  };
   return (
     <div className="search">
       {" "}
@@ -27,6 +25,7 @@ const Searchbar = ({ searchTerm, setSearchTerm, setVideos }) => {
           onChange={setSearch}
           aria-label="Search"
         />
+        <button onClick={search}>Search</button>
       </form>
     </div>
   );

@@ -1,5 +1,4 @@
 import "../index.css";
-
 import Searchbar from "./Searchbar";
 
 const Header = ({ searchTerm, setSearchTerm, setVideos }) => {

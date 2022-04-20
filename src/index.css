@@ -1,16 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
-
+#root {
+  height: auto;
+}
 body,
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins, monospace;
+  height: 100vh;
 }
 .cardsBody {
   display: flex;
   justify-content: center;
   width: 100vw;
+  height: 82vh;
 }
 .header-container {
   display: flex;
@@ -37,7 +41,7 @@ html {
 }
 
 .main {
-  background-color: #363232;
+  background-color: #d1c6c6;
   height: 100vh;
 }
 
@@ -53,4 +57,105 @@ html {
   width: 60%;
   border-radius: 5px;
   margin-bottom: 2em;
+  background-color: #fff;
+  height: 79vh;
+}
+
+.likeButton {
+  display: inline-block;
+  padding: 2px 5px 5px 5px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #3b4255;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 20px 20px;
+}
+
+.dislikeButton {
+  display: inline-block;
+  padding: 5px 5px 2px 5px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #424c68;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 20px 20px;
+}
+
+.likeButtonActive {
+  background-color: #39cc2c;
+  color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  display: inline-block;
+  padding: 2px 5px 5px 5px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  margin: 20px 20px;
+}
+.dislikeButtonActive {
+  background-color: #e22d15;
+  color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  display: inline-block;
+  padding: 5px 5px 2px 5px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  margin: 20px 20px;
+}
+.button-align {
+  align-items: center;
+}
+.btn-primary {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.footer {
+  text-align: center;
+  margin-top: auto;
+}
+footer a :hover {
+  color: rgba(170, 235, 243, 0.952);
+  background-color: transparent;
+  transition: background-color 0.15s, font-size 0.15s;
+  font-size: 3rem;
+}
+footer ul {
+  padding-left: 0;
+  margin: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: x-large;
+}
+li {
+  list-style: none;
+  display: inline;
+  margin-right: 1rem;
 }

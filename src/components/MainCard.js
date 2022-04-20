@@ -1,6 +1,7 @@
 import "../index.css";
 import React from "react";
 import IFrameInput from "./iframe";
+import CustomButton from "./Button";
 
 const MainCard = ({ title, id }) => {
   return (
@@ -9,9 +10,8 @@ const MainCard = ({ title, id }) => {
         <IFrameInput id={id}/>
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
-          <p className="card-text">yo</p>
-          <p className="card-text">yes</p>
-          <p className="card-text">yyy</p>
+          <p className="card-text">Comments</p>
+          <CustomButton/>
         </div>
       </div>
     </div>

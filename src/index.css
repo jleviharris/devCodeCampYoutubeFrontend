@@ -1,20 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
-#root {
+/* #root {
   height: auto;
-}
+} */
 body,
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins, monospace;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .cardsBody {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 4em;
+  margin-top: 2em;
+  /* display: flex; */
   justify-content: center;
   width: 100vw;
-  height: 82vh;
+  /* height: 80vh; */
 }
 .header-container {
   display: flex;
@@ -24,25 +28,22 @@ html {
   padding: 2em;
   background-color: #c92f4f;
 }
-
 .logo {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: 0.2em;
 }
-
 #tube {
   color: white;
 }
-
 .search {
   text-transform: uppercase;
 }
 
 .main {
-  background-color: #d1c6c6;
-  height: 100vh;
+  /* background-color: #d1c6c6; */
+  height: 70vh;
 }
 
 .card-deck {
@@ -51,16 +52,27 @@ html {
 }
 
 .card {
-  border: 1px black solid;
+  /* border: 1px rgb(175, 12, 12) solid; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 60%;
+  width: 17rem;
   border-radius: 5px;
   margin-bottom: 2em;
   background-color: #fff;
-  height: 79vh;
+  height: auto;
+  /* gap: 1em; */
+  /* display: grid; */
 }
 
+.iframes {
+  border: none;
+}
+
+/* .testing {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.5em;
+} */
 .likeButton {
   display: inline-block;
   padding: 2px 5px 5px 5px;
@@ -76,7 +88,6 @@ html {
   box-shadow: 0 9px #999;
   margin: 20px 20px;
 }
-
 .dislikeButton {
   display: inline-block;
   padding: 5px 5px 2px 5px;
@@ -92,7 +103,6 @@ html {
   box-shadow: 0 9px #999;
   margin: 20px 20px;
 }
-
 .likeButtonActive {
   background-color: #39cc2c;
   color: white;

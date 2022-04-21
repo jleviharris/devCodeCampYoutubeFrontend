@@ -1,7 +1,7 @@
 import "../index.css";
 import Searchbar from "./Searchbar";
 
-const Header = ({ searchTerm, setSearchTerm, setVideos }) => {
+const Header = ({ searchTerm, setSearchTerm, setVideos, RelatedV, setRelatedV}) => {
   return (
     <div className="header-container">
       <nav className="logo">
@@ -11,6 +11,8 @@ const Header = ({ searchTerm, setSearchTerm, setVideos }) => {
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         setVideos={setVideos}
+        RelatedV={RelatedV}
+        setRelatedV={setRelatedV}
       />
     </div>
   );

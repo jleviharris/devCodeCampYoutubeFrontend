@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [Videos, setVideos] = useState([]);
+  const [RelatedV, setRelatedV] = useState([]);
   
   return (
     <div className="container">
@@ -14,10 +15,17 @@ function App() {
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         setVideos={setVideos}
+        RelatedV={RelatedV}
+        setRelatedV={setRelatedV}
       />
-      <RowRenderer Videos={Videos} />
+      <div className="test">
+        <RowRenderer Videos={Videos} RelatedV={RelatedV} setRelatedV={setRelatedV} />
+      </div>
       <Footer/>
     </div>
   );
 }
 export default App;
+
+
+

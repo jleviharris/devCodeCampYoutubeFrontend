@@ -28,6 +28,7 @@ const CustomButton = (props) => {
     }
     return (
         <div>
+            
             <button  className={buttonClass} onClick={handleClick}><i id="like" className="fa fa-thumbs-up"></i></button> 
             <button  className={buttonClass2} onClick={handleClick}><i id="dislike" className="fa fa-thumbs-down"></i></button>   
         </div>  

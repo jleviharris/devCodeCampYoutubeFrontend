@@ -5,14 +5,11 @@ const RowRenderer = ({ Videos }) => {
   let cardHtml = [];
   for (let i = 0; i < Videos.length; i++) {
     cardHtml.push(
-      <div style={{ display: "inline-block" }}>
+      <div className="testing ">
         <MainCard
           title={Videos[i].snippet.title}
+          description={Videos[i].snippet.description}
           id={Videos[i].id.videoId}
-          // album={Videos[i].album}
-          // artist={Videos[i].artist}
-          // genre={Videos[i].genre}
-          // releaseDate={Videos[i].releaseDate}
         />
       </div>
     );

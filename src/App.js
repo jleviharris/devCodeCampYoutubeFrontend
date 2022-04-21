@@ -1,13 +1,15 @@
 import "./index.css";
+
 import React, { useState } from "react";
+
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import RowRenderer from "./components/RowRenderer";
-import Footer from "./components/Footer";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [Videos, setVideos] = useState([]);
-  
+
   return (
     <div className="container">
       <Header
@@ -15,8 +17,10 @@ function App() {
         setSearchTerm={setSearchTerm}
         setVideos={setVideos}
       />
-      <RowRenderer Videos={Videos} />
-      <Footer/>
+      <div className="test">
+        <RowRenderer Videos={Videos} />
+      </div>
+      <Footer />
     </div>
   );
 }

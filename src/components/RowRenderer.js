@@ -12,10 +12,6 @@ const RowRenderer = ({ Videos, RelatedV, setRelatedV }) => {
           title={Videos[i].snippet.title}
           description={Videos[i].snippet.description}
           id={Videos[i].id.videoId}
-          // album={Videos[i].album}
-          // artist={Videos[i].artist}
-          // genre={Videos[i].genre}
-          // releaseDate={Videos[i].releaseDate}
         />
       </div>
     );

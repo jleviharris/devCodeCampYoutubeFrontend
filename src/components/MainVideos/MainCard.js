@@ -21,11 +21,14 @@ const MainCard = ({ title, id, RelatedV, setRelatedV, description }) => {
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <p>{description}</p>
-          <CreateComment createNewPost={addNewPost}/>
-          <DisplayComments parentPosts={Posts}/>
-          <p>Comments</p>
-          {/* <Comments className="card-text"/> */}
           <CustomButton/>
+          
+          <CreateComment createNewPost={addNewPost}/>
+          <p>Comments</p>
+          <DisplayComments parentPosts={Posts}/>
+          
+          {/* <Comments className="card-text"/> */}
+         
           <DisplayRV RelatedV={RelatedV} setRelatedV={setRelatedV} OGVideoID={id}/>
         </div>
       </div>

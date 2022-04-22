@@ -3,10 +3,10 @@ import React from "react";
 
 const RVCard = ({ id }) => {
     return (
-      <div className="main">
-        <div className="card" style={{ width: "2rem" }}>
+      <div >
+        <div style={{ width: "12rem" }}>
           <IFrameInput id={id}/>
-          <div className="card-body">
+          <div >
             {/* <h5 className="card-title">{title}</h5> */}
           </div>
         </div>

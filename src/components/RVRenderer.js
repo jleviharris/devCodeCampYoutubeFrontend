@@ -6,7 +6,7 @@ const RVRenderer = ({ RelatedV }) => {
   let cardHtml = [];
   for (let i = 0; i < RelatedV.length; i++) {
     cardHtml.push(
-      <div style={{ display: "inline-block" }}>
+      <div >
         <RVCard
           // title={RelatedV.items[i].title}
           id={RelatedV[i].id.videoId}
@@ -14,7 +14,7 @@ const RVRenderer = ({ RelatedV }) => {
       </div>
     );
   }
-  return <div className="cardsBody">{cardHtml}</div>;
+  return <div>{cardHtml}</div>;
 };
 
 export default RVRenderer;

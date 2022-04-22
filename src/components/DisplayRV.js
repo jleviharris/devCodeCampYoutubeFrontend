@@ -7,10 +7,10 @@ const DisplayRV = ({OGVideoID, setRelatedV, RelatedV}) => {
   const searchRV = async () => {
     
     RelatedVideos(OGVideoID).then((videos) => setRelatedV(videos));
-    // console.log(RelatedV[0].id.videoId)
+    
   };
   return (
-    <div className="mainRV">
+    <div className="RV">
      <button onClick={searchRV}>Related Videos</button>
      {RelatedV.length >0 ?  <RVRenderer RelatedV={RelatedV}/>:null}
     

@@ -1,5 +1,5 @@
-import "../index.css";
-import { RelatedVideos } from "../Utilities/RelatedVideos";
+import "../../index.css";
+import { RelatedVideos } from "../../Utilities/RelatedVideos";
 import RVRenderer from "./RVRenderer";
 
 const DisplayRV = ({OGVideoID, setRelatedV, RelatedV}) => {

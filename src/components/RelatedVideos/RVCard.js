@@ -1,4 +1,4 @@
-import IFrameInput from "./iframe";
+import IFrameInput from "../iframe";
 import React from "react";
 
 const RVCard = ({ id }) => {

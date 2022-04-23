@@ -1,36 +1,38 @@
 import "../../index.css"
 import React, { useState } from "react";
 import IFrameInput from "../iframe";
-import CustomButton from "../Button";
-import DisplayRV from "../RelatedVideos/DisplayRV";
-import CreateComment from "../Comments/CreateComment";
-import DisplayComments from "../Comments/DisplayComment";
+// import CustomButton from "../Button";
+// import CreateComment from "../Comments/CreateComment";
+// import DisplayComments from "../Comments/DisplayComment";
+import DisplayMainVideo from "./DisplayMainVideo";
+import { useNavigate, Link } from "react-router-dom";
 
 const MainCard = ({ title, id, RelatedV, setRelatedV, description }) => {
-  const[Posts, setPosts] = useState([]);
+  let history = useNavigate();
+  // const[Posts, setPosts] = useState([]);
   
-  function addNewPost(post){
-    let tempPost = [post, ...Posts];
+  // function addNewPost(post){
+  //   let tempPost = [post, ...Posts];
     
-    setPosts(tempPost);
-  }
+  //   setPosts(tempPost);
+  // }
   return (
     <div className="main">
       <div className="card">
         <IFrameInput id={id} />
         <div className="card-body">
-          <h5 className="card-title">{title}</h5>
+          <Link to="/SingleVideo"> <h5 className="card-title">{title}</h5></Link>
           <p>{description}</p>
-          <CustomButton/>
+          {/* <CustomButton/>
           
           <CreateComment createNewPost={addNewPost}/>
           <p>Comments</p>
           <DisplayComments parentPosts={Posts}/>
-          
-          {/* <Comments className="card-text"/> */}
+           */}
+      
          
-          <DisplayRV RelatedV={RelatedV} setRelatedV={setRelatedV} OGVideoID={id}/>
-        </div>
+          
+       </div> 
       </div>
     </div>
   );

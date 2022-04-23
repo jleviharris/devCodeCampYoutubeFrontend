@@ -1,7 +1,10 @@
 import "../index.css";
 import { SearchForVideos } from "../Utilities/Search";
+import RowRenderer from "./MainVideos/RowRenderer";
+import { Link } from "react-router-dom";
 
-const Searchbar = ({ searchTerm, setSearchTerm, setVideos }) => {
+
+const Searchbar = ({ searchTerm, setSearchTerm, setVideos, Videos, RelatedV, setRelatedV }) => {
   const setSearch = (event) => {
     const searchWord = event.target.value;
     setSearchTerm(searchWord); 
@@ -25,8 +28,9 @@ const Searchbar = ({ searchTerm, setSearchTerm, setVideos }) => {
           onChange={setSearch}
           aria-label="Search"
         />
-        <button onClick={search}>Search</button>
+        <Link to="/main"><button onClick={search}>Search</button></Link>
       </form>
+    
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const RelatedVideos = async (query = "") => {
+export const RelatedVideos = async (query) => {
   const APIKEY = "AIzaSyCtX3zDth6rZdOmGUDYvkztZgumCT1zkgQ";
   let response = await axios
     .get(

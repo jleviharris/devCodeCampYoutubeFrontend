@@ -2,19 +2,22 @@ import "../../index.css";
 import { RelatedVideos } from "../../Utilities/RelatedVideos";
 import RVRenderer from "./RVRenderer";
 
-const DisplayRV = ({OGVideoID, setRelatedV, RelatedV}) => {
+
+const DisplayRV = ({id, setRelatedV, RelatedV}) => {
 
   const searchRV = async () => {
     
-    RelatedVideos(OGVideoID).then((videos) => setRelatedV(videos));
+    RelatedVideos(id).then((videos) => setRelatedV(videos));
+   console.log(RelatedV);
     
   };
   return (
-    <div className="RV">
+    <form  onSubmit={(e) => {
+      e.preventDefault();
+    }} className="RV">
      <button onClick={searchRV}>Related Videos</button>
-     {RelatedV.length >0 ?  <RVRenderer RelatedV={RelatedV}/>:null}
-    
-    </div>
+     <RVRenderer RelatedV={RelatedV}/>
+    </form>
   );
 };
 export default DisplayRV;

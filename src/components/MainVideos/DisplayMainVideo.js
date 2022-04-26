@@ -6,7 +6,7 @@ import DisplayComments from '../Comments/DisplayComment';
 import DisplayRV from '../RelatedVideos/DisplayRV';
 import { useState } from 'react';
 
-const DisplayMainVideo = ({id, title, description, RelatedV, setRelatedV }) => {
+const DisplayMainVideo = ({ ID, Title, Description, description }) => {
   const[Posts, setPosts] = useState([]);
   const header = "Commments"
   let count = 0
@@ -18,10 +18,10 @@ const DisplayMainVideo = ({id, title, description, RelatedV, setRelatedV }) => {
   }
   return (
     <div >
-      <IFrameInput id={id} />
+      <IFrameInput id={ID} />
       <div >
-        <h5>{title}</h5>
-        <p>{description}</p>
+        <h5>{Title}</h5>
+        <h6>{description}</h6>
         <CustomButton/>
         <CreateComment createNewPost={createNewPost} count={count}/>
         <p>{count} {header}</p>

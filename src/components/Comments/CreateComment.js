@@ -7,6 +7,14 @@ const CreateComment = ({createNewPost, count}) => {
     console.log({count});
     
     function handlePost(event) {
+
+        // app.post("/api/comments", (req, res) => {
+        //     const newComment = req.body;
+        //     const addedComment = repoContext.comments.createComment(newComment)
+        //     return res.status(201).send(addedComment);
+        // });
+
+
         event.preventDefault();
         let newPost = {
             postText: post,

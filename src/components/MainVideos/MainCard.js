@@ -5,10 +5,21 @@ import IFrameInput from "../iframe";
 // import CreateComment from "../Comments/CreateComment";
 // import DisplayComments from "../Comments/DisplayComment";
 import DisplayMainVideo from "./DisplayMainVideo";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const MainCard = ({ title, id, RelatedV, setRelatedV, description }) => {
-  let history = useNavigate();
+const MainCard = ({ title, id, description, setID, setTitle, setDescription }) => {
+  
+  
+  const handleClick = (e) => {
+    setID(e.target.id);
+    setTitle(e.target.title);
+    setDescription(e.target.description);
+    console.log(e.target);
+    // console.log(Description);
+    
+  }
+  
+  
   // const[Posts, setPosts] = useState([]);
   
   // function addNewPost(post){
@@ -21,7 +32,7 @@ const MainCard = ({ title, id, RelatedV, setRelatedV, description }) => {
       <div className="card">
         <IFrameInput id={id} />
         <div className="card-body">
-          <Link to="/SingleVideo"> <h5 className="card-title">{title}</h5></Link>
+          <Link to="/SingleVideo"> <button onClick={handleClick}><h5 id={id} title={title} description={description} className="card-title">{title}</h5></button></Link>
           <p>{description}</p>
           {/* <CustomButton/>
           

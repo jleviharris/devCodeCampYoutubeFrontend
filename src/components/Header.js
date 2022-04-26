@@ -13,7 +13,9 @@ const Header = ({ searchTerm, setSearchTerm, setVideos, RelatedV, setRelatedV, V
         setVideos={setVideos}
         RelatedV={RelatedV}
         setRelatedV={setRelatedV}
-        Videos={Videos} RelatedV={RelatedV} setRelatedV={setRelatedV}
+        Videos={Videos} 
+        RelatedV={RelatedV} 
+        setRelatedV={setRelatedV}
       />
     </div>
   );

@@ -4,7 +4,6 @@ const CreateComment = ({createNewPost, count}) => {
 
     const [post, setPost] = useState('');
     const handleCount = () => {count++;};
-    console.log({count});
     
     function handlePost(event) {
 
@@ -13,8 +12,6 @@ const CreateComment = ({createNewPost, count}) => {
         //     const addedComment = repoContext.comments.createComment(newComment)
         //     return res.status(201).send(addedComment);
         // });
-
-
         event.preventDefault();
         let newPost = {
             postText: post,
@@ -26,11 +23,9 @@ const CreateComment = ({createNewPost, count}) => {
         <form onSubmit={handlePost}>
            <label>Comment</label>
             <div className="form-group">
-                
                 <textarea className="form-control" type="text" value={post} onChange={(event) => setPost(event.target.value)} />
                 <button onClick={handleCount} type='submit' className="btn btn-primary">Post</button>
-            </div>
-            
+            </div> 
         </form>
      );
 }

@@ -7,7 +7,7 @@ const RVCard = ({ id }) => {
         <div style={{ width: "12rem" }}>
           <IFrameInput id={id}/>
           <div >
-            {/* <h5 className="card-title">{title}</h5> */}
+            {/* <h5 className="card-title">{itle}</h5> */}
           </div>
         </div>
       </div>

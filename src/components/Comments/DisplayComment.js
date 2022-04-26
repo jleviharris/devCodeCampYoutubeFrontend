@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const DisplayComments = (props) => {
     return ( 
         <div className="bottom-container">

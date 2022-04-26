@@ -30,10 +30,10 @@ const MainCard = ({ title, id, description, setID, setTitle, setDescription }) =
   return (
     <div className="main">
       <div className="card">
-        <IFrameInput id={id} />
+        <IFrameInput width="700px" id={id} />
         <div className="card-body">
-          <Link to="/SingleVideo"> <button onClick={handleClick}><h5 id={id} title={title} description={description} className="card-title">{title}</h5></button></Link>
-          <p>{description}</p>
+          <Link to="/SingleVideo"> <button onClick={handleClick}><h5 id={id} title={title} description={description} className="card-title">{title}</h5> <p>{description}</p></button></Link>
+         
           {/* <CustomButton/>
           
           <CreateComment createNewPost={addNewPost}/>

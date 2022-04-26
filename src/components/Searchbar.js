@@ -3,7 +3,7 @@ import { SearchForVideos } from "../Utilities/Search";
 import { Link } from "react-router-dom";
 
 
-const Searchbar = ({ searchTerm, setSearchTerm, setVideos, Videos, RelatedV, setRelatedV }) => {
+const Searchbar = ({ searchTerm, setSearchTerm, setVideos }) => {
   const setSearch = (event) => {
     const searchWord = event.target.value;
     setSearchTerm(searchWord); 

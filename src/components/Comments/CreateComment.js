@@ -24,12 +24,13 @@ const CreateComment = ({createNewPost, count}) => {
 
     return ( 
         <form onSubmit={handlePost}>
-           
+           <label>Comment</label>
             <div className="form-group">
-                <label>Comment</label>
+                
                 <textarea className="form-control" type="text" value={post} onChange={(event) => setPost(event.target.value)} />
+                <button onClick={handleCount} type='submit' className="btn btn-primary">Post</button>
             </div>
-            <button onClick={handleCount} type='submit' className="btn btn-primary">Post</button>
+            
         </form>
      );
 }

@@ -176,3 +176,13 @@ li {
   align-items: center;
   align-content: center;
 }
+
+.TitleAndButton {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.MainVAndTitle {
+  width: 100%;
+}

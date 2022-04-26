@@ -186,3 +186,10 @@ li {
 .MainVAndTitle {
   width: 100%;
 }
+.Comments {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}

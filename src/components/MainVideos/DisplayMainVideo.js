@@ -23,11 +23,11 @@ const DisplayMainVideo = ({ ID, Title, Description, description }) => {
         <IFrameInput id={ID} />
       </div>
       <div className="TitleAndButton">
-        <h5>{Title}</h5><CustomButton/>
+        <h2>{Title}</h2><CustomButton/>
       </div>
       </div>
       <h6>{description}</h6>
-      <div >
+      <div className="Comments">
         
         <CreateComment createNewPost={createNewPost} count={count}/>
         <p>{count} {header}</p>
